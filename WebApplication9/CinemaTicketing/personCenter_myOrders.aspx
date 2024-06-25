@@ -55,7 +55,8 @@
 						</div>
 						<div class="floatright">
 							<div>
-								<asp:Button ID="Button1" runat="server" Text="退票" onclick="Button1_Click" />
+                 	            <a href="personCenter_myOrders.aspx?orderNo=<%=list1[i].getOrderNo() %>">退票</a>
+
 
 								未完成&nbsp;&nbsp;
 								<a href="personCenter_myOrders.aspx?orderNo=<%=list1[i].getOrderNo() %>">打印</a>

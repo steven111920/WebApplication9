@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using System.Data.Sql;
 using System.Data;
 using CinemaTicketingSystem.Entity;
+using System.Data.Common;
 
 namespace CinemaTicketingSystem
 {
@@ -165,7 +166,21 @@ namespace CinemaTicketingSystem
                 }
                 
             }
+            //退票
+            {
+                string orderNo = Request.QueryString["orderNo"];
+                if (orderNo != null)
+                {
+                    sqlconnection.openDatabase();//打开数据库
+                    
+                    string sqlyuju = "DELETE FROM  Orders where OrderNo = '" + orderNo + "';";
+                    SqlCommand cmd = sqlconnection.executeSQL(sqlyuju);
+                    cmd.ExecuteNonQuery();
+                    Response.Write("<script>alert('打印成功!');window.location.href ='personCenter_myOrders.aspx'</script>");//返回个人信息页面
+                    sqlconnection.closeDatabase();//关闭数据库
+                }
 
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
