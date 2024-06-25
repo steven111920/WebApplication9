@@ -37,7 +37,7 @@
         <div id=login style="text-align:center">
 			<br>
     		<font size=6 color=white><b>登录</b></font><br><br><br>
-		    <strong><font size=4 color=white>账号&nbsp;&nbsp;<asp:TextBox ID="email" runat="server" Height="25px" Width="150px"></asp:TextBox>
+		    <strong><font size=4 color=white>账号&nbsp;&nbsp;<asp:TextBox ID="email" runat="server" Height="25px" Width="150px" OnTextChanged="email_TextChanged"></asp:TextBox>
             </font></strong>
             <BR><br/><br />
     	    <strong><font size=4 color=white>密码&nbsp;&nbsp;<input type="password" name="password" style="width: 150px; height: 25px">

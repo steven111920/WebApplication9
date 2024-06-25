@@ -46,14 +46,14 @@
 					</div>
 					<div class="floatright number2">
 						<div class="floatleft detail">
-                            <div style="height:20px;width:350px;font-size:13px;">电影：<%=list1[i].getMovieName() %></div>
-							<div style="height:20px;width:350px;font-size:13px;">日期：<%=list1[i].getPlayingDate() %></div>
-							<div style="height:20px;width:350px;font-size:13px;">时间：<%=list1[i].getTime()%></div>
-							<div style="height:20px;width:350px;font-size:13px;">厅号：<%=list1[i].getHallName()%></div>
-                            <div style="height:20px;width:350px;font-size:13px;">座位：<%=list1[i].getSeat()%></div>
-							<div style="height:20px;width:350px;font-size:13px;">价格：<%=list1[i].getPrice()%></div>
+                            <div style="height:20px;width:280px;font-size:13px;">电影：<%=list1[i].getMovieName() %></div>
+							<div style="height:20px;width:280px;font-size:13px;">日期：<%=list1[i].getPlayingDate() %></div>
+							<div style="height:20px;width:280px;font-size:13px;">时间：<%=list1[i].getTime()%></div>
+							<div style="height:20px;width:280px;font-size:13px;">厅号：<%=list1[i].getHallName()%></div>
+                            <div style="height:20px;width:280px;font-size:13px;">座位：<%=list1[i].getSeat()%></div>
+							<div style="height:20px;width:280px;font-size:13px;">价格：<%=list1[i].getPrice()%></div>
 						</div>
-						<div class="floatright zhuangtai">
+						<div class="floatright">
 							<div>
 								<asp:Button ID="Button1" runat="server" Text="退票" onclick="Button1_Click" />
 

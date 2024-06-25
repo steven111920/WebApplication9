@@ -25,9 +25,9 @@ namespace CinemaTicketingSystem
             string sqlyuju = null;
 
             //获取前台网页所提交的数据
-            string username = Request.Form["username"];
+            string username = Request.Form["email"];
             string password = Request.Form["password"];
-            Session["username"] = this.username.Text;
+            Session["username"] = this.email.Text;
             if (username == "")
             {
                 message = "用户名为空，请输入用户名！";
@@ -73,6 +73,11 @@ namespace CinemaTicketingSystem
         protected void Button2_Click(object sender, EventArgs e)
         {
             Response.Redirect("/userRegister.aspx");
+        }
+
+        protected void email_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
