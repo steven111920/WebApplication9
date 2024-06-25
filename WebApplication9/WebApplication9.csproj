@@ -1,0 +1,471 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{913E4FA0-DD81-47D8-B2EA-04D9CD3B688E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication9</RootNamespace>
+    <AssemblyName>WebApplication9</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44368</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CinemaTicketing\backStage_adInfomationUpdate.aspx" />
+    <Content Include="CinemaTicketing\backStage_adPasswordUpdate.aspx" />
+    <Content Include="CinemaTicketing\backStage_login.aspx" />
+    <Content Include="CinemaTicketing\backStage_main.aspx" />
+    <Content Include="CinemaTicketing\backStage_movieAdd.aspx" />
+    <Content Include="CinemaTicketing\backStage_movieManagement.aspx" />
+    <Content Include="CinemaTicketing\backStage_movieUpdate.aspx" />
+    <Content Include="CinemaTicketing\backStage_orderManagement.aspx" />
+    <Content Include="CinemaTicketing\backStage_playAdd.aspx" />
+    <Content Include="CinemaTicketing\backStage_playManagement.aspx" />
+    <Content Include="CinemaTicketing\backStage_playUpdate.aspx" />
+    <Content Include="CinemaTicketing\backStage_queryMovie.aspx" />
+    <Content Include="CinemaTicketing\backStage_queryMovieSession.aspx" />
+    <Content Include="CinemaTicketing\backStage_queryOrder.aspx" />
+    <Content Include="CinemaTicketing\backStage_queryUser.aspx" />
+    <Content Include="CinemaTicketing\backStage_userManagement.aspx" />
+    <Content Include="CinemaTicketing\Changci.aspx" />
+    <Content Include="CinemaTicketing\CinemaTicketingSystem.csproj.user" />
+    <Content Include="CinemaTicketing\css\back-login.css" />
+    <Content Include="CinemaTicketing\css\back.css" />
+    <Content Include="CinemaTicketing\css\blue.css" />
+    <Content Include="CinemaTicketing\css\chaxun.css" />
+    <Content Include="CinemaTicketing\css\person-center.css" />
+    <Content Include="CinemaTicketing\css\shouye1.css" />
+    <Content Include="CinemaTicketing\executeDeleteSql.aspx" />
+    <Content Include="CinemaTicketing\homePage1.aspx" />
+    <Content Include="CinemaTicketing\homePage2.aspx" />
+    <Content Include="CinemaTicketing\images\back-login-bg.jpg" />
+    <Content Include="CinemaTicketing\images\back.jpeg" />
+    <Content Include="CinemaTicketing\images\detail_shouye.jpg" />
+    <Content Include="CinemaTicketing\images\dream.jpg" />
+    <Content Include="CinemaTicketing\images\dream1.jpg" />
+    <Content Include="CinemaTicketing\images\dream2.jpg" />
+    <Content Include="CinemaTicketing\images\dream3.jpg" />
+    <Content Include="CinemaTicketing\images\dream4.jpg" />
+    <Content Include="CinemaTicketing\images\dream5.jpg" />
+    <Content Include="CinemaTicketing\images\dream6.jpg" />
+    <Content Include="CinemaTicketing\images\fanghua.jpg" />
+    <Content Include="CinemaTicketing\images\fanghua1.jpg" />
+    <Content Include="CinemaTicketing\images\fanghua2.jpg" />
+    <Content Include="CinemaTicketing\images\fanghua3.jpg" />
+    <Content Include="CinemaTicketing\images\fanghua4.jpg" />
+    <Content Include="CinemaTicketing\images\fanghua5.jpg" />
+    <Content Include="CinemaTicketing\images\fanghua6.jpg" />
+    <Content Include="CinemaTicketing\images\head.png" />
+    <Content Include="CinemaTicketing\images\huabian.png" />
+    <Content Include="CinemaTicketing\images\hunger-game-1.jpg" />
+    <Content Include="CinemaTicketing\images\hunger-game-2.jpg" />
+    <Content Include="CinemaTicketing\images\hunger-game-3.jpg" />
+    <Content Include="CinemaTicketing\images\hunger-game-4.jpg" />
+    <Content Include="CinemaTicketing\images\hunger-game-5.jpg" />
+    <Content Include="CinemaTicketing\images\hunger-game-6.jpg" />
+    <Content Include="CinemaTicketing\images\hunger-game.jpg" />
+    <Content Include="CinemaTicketing\images\machine-blood.jpg" />
+    <Content Include="CinemaTicketing\images\machine-blood1.jpg" />
+    <Content Include="CinemaTicketing\images\machine-blood2.jpg" />
+    <Content Include="CinemaTicketing\images\machine-blood3.jpg" />
+    <Content Include="CinemaTicketing\images\machine-blood4.jpg" />
+    <Content Include="CinemaTicketing\images\machine-blood5.jpg" />
+    <Content Include="CinemaTicketing\images\machine-blood6.jpg" />
+    <Content Include="CinemaTicketing\images\nidemingzi.jpg" />
+    <Content Include="CinemaTicketing\images\p1.1.jpg" />
+    <Content Include="CinemaTicketing\images\p1.2.jpg" />
+    <Content Include="CinemaTicketing\images\p1.jpg" />
+    <Content Include="CinemaTicketing\images\p10.jpg" />
+    <Content Include="CinemaTicketing\images\p2.jpg" />
+    <Content Include="CinemaTicketing\images\p3.jpg" />
+    <Content Include="CinemaTicketing\images\p4.jpg" />
+    <Content Include="CinemaTicketing\images\p5.jpg" />
+    <Content Include="CinemaTicketing\images\p6.jpg" />
+    <Content Include="CinemaTicketing\images\p7.jpg" />
+    <Content Include="CinemaTicketing\images\p8.jpg" />
+    <Content Include="CinemaTicketing\images\p9.jpg" />
+    <Content Include="CinemaTicketing\images\person_center_bg.jpg" />
+    <Content Include="CinemaTicketing\images\qianyuqianxun.jpg" />
+    <Content Include="CinemaTicketing\images\success.png" />
+    <Content Include="CinemaTicketing\images\VanGogh.jpg" />
+    <Content Include="CinemaTicketing\images\VanGogh1.jpg" />
+    <Content Include="CinemaTicketing\images\VanGogh2.jpg" />
+    <Content Include="CinemaTicketing\images\VanGogh3.jpg" />
+    <Content Include="CinemaTicketing\images\VanGogh4.jpg" />
+    <Content Include="CinemaTicketing\images\VanGogh5.jpg" />
+    <Content Include="CinemaTicketing\images\VanGogh6.jpg" />
+    <Content Include="CinemaTicketing\images\yinhun.jpg" />
+    <Content Include="CinemaTicketing\images\yinhun1.jpg" />
+    <Content Include="CinemaTicketing\images\yinhun2.jpg" />
+    <Content Include="CinemaTicketing\images\yinhun3.jpg" />
+    <Content Include="CinemaTicketing\images\yinhun4.jpg" />
+    <Content Include="CinemaTicketing\images\yinhun5.jpg" />
+    <Content Include="CinemaTicketing\images\yinhun6.jpg" />
+    <Content Include="CinemaTicketing\images\yinhun（2）.jpg" />
+    <Content Include="CinemaTicketing\login.aspx" />
+    <Content Include="CinemaTicketing\money.aspx" />
+    <Content Include="CinemaTicketing\movieDetail.aspx" />
+    <Content Include="CinemaTicketing\movieInfo.aspx" />
+    <Content Include="CinemaTicketing\movieList.aspx" />
+    <Content Include="CinemaTicketing\payment.aspx" />
+    <Content Include="CinemaTicketing\paymentSuccess.aspx" />
+    <Content Include="CinemaTicketing\personCenter_main.aspx" />
+    <Content Include="CinemaTicketing\personCenter_myOrders.aspx" />
+    <Content Include="CinemaTicketing\personCenter_updateInfomation.aspx" />
+    <Content Include="CinemaTicketing\personCenter_updatePassword.aspx" />
+    <Content Include="CinemaTicketing\selectSeats.aspx" />
+    <Content Include="CinemaTicketing\userRegister.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CinemaTicketing\backStage_adInfomationUpdate.aspx.cs">
+      <DependentUpon>backStage_adInfomationUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_adInfomationUpdate.aspx.designer.cs">
+      <DependentUpon>backStage_adInfomationUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_adPasswordUpdate.aspx.cs">
+      <DependentUpon>backStage_adPasswordUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_adPasswordUpdate.aspx.designer.cs">
+      <DependentUpon>backStage_adPasswordUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_login.aspx.cs">
+      <DependentUpon>backStage_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_login.aspx.designer.cs">
+      <DependentUpon>backStage_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_main.aspx.cs">
+      <DependentUpon>backStage_main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_main.aspx.designer.cs">
+      <DependentUpon>backStage_main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_movieAdd.aspx.cs">
+      <DependentUpon>backStage_movieAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_movieAdd.aspx.designer.cs">
+      <DependentUpon>backStage_movieAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_movieManagement.aspx.cs">
+      <DependentUpon>backStage_movieManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_movieManagement.aspx.designer.cs">
+      <DependentUpon>backStage_movieManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_movieUpdate.aspx.cs">
+      <DependentUpon>backStage_movieUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_movieUpdate.aspx.designer.cs">
+      <DependentUpon>backStage_movieUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_orderManagement.aspx.cs">
+      <DependentUpon>backStage_orderManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_orderManagement.aspx.designer.cs">
+      <DependentUpon>backStage_orderManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_playAdd.aspx.cs">
+      <DependentUpon>backStage_playAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_playAdd.aspx.designer.cs">
+      <DependentUpon>backStage_playAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_playManagement.aspx.cs">
+      <DependentUpon>backStage_playManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_playManagement.aspx.designer.cs">
+      <DependentUpon>backStage_playManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_playUpdate.aspx.cs">
+      <DependentUpon>backStage_playUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_playUpdate.aspx.designer.cs">
+      <DependentUpon>backStage_playUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_queryMovie.aspx.cs">
+      <DependentUpon>backStage_queryMovie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_queryMovie.aspx.designer.cs">
+      <DependentUpon>backStage_queryMovie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_queryMovieSession.aspx.cs">
+      <DependentUpon>backStage_queryMovieSession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_queryMovieSession.aspx.designer.cs">
+      <DependentUpon>backStage_queryMovieSession.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_queryOrder.aspx.cs">
+      <DependentUpon>backStage_queryOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_queryOrder.aspx.designer.cs">
+      <DependentUpon>backStage_queryOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_queryUser.aspx.cs">
+      <DependentUpon>backStage_queryUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_queryUser.aspx.designer.cs">
+      <DependentUpon>backStage_queryUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_userManagement.aspx.cs">
+      <DependentUpon>backStage_userManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\backStage_userManagement.aspx.designer.cs">
+      <DependentUpon>backStage_userManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\Changci.aspx.cs">
+      <DependentUpon>Changci.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\Changci.aspx.designer.cs">
+      <DependentUpon>Changci.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\Entity\Movies.cs" />
+    <Compile Include="CinemaTicketing\Entity\MovieSession.cs" />
+    <Compile Include="CinemaTicketing\Entity\Orders.cs" />
+    <Compile Include="CinemaTicketing\Entity\Users.cs" />
+    <Compile Include="CinemaTicketing\executeDeleteSql.aspx.cs">
+      <DependentUpon>executeDeleteSql.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\executeDeleteSql.aspx.designer.cs">
+      <DependentUpon>executeDeleteSql.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\homePage1.aspx.cs">
+      <DependentUpon>homePage1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\homePage1.aspx.designer.cs">
+      <DependentUpon>homePage1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\homePage2.aspx.cs">
+      <DependentUpon>homePage2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\homePage2.aspx.designer.cs">
+      <DependentUpon>homePage2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\money.aspx.cs">
+      <DependentUpon>money.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\money.aspx.designer.cs">
+      <DependentUpon>money.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\movieDetail.aspx.cs">
+      <DependentUpon>movieDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\movieDetail.aspx.designer.cs">
+      <DependentUpon>movieDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\movieInfo.aspx.cs">
+      <DependentUpon>movieInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\movieInfo.aspx.designer.cs">
+      <DependentUpon>movieInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\movieList.aspx.cs">
+      <DependentUpon>movieList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\movieList.aspx.designer.cs">
+      <DependentUpon>movieList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\payment.aspx.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\payment.aspx.designer.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\paymentSuccess.aspx.cs">
+      <DependentUpon>paymentSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\paymentSuccess.aspx.designer.cs">
+      <DependentUpon>paymentSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\personCenter_main.aspx.cs">
+      <DependentUpon>personCenter_main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\personCenter_main.aspx.designer.cs">
+      <DependentUpon>personCenter_main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\personCenter_myOrders.aspx.cs">
+      <DependentUpon>personCenter_myOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\personCenter_myOrders.aspx.designer.cs">
+      <DependentUpon>personCenter_myOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\personCenter_updateInfomation.aspx.cs">
+      <DependentUpon>personCenter_updateInfomation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\personCenter_updateInfomation.aspx.designer.cs">
+      <DependentUpon>personCenter_updateInfomation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\personCenter_updatePassword.aspx.cs">
+      <DependentUpon>personCenter_updatePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\personCenter_updatePassword.aspx.designer.cs">
+      <DependentUpon>personCenter_updatePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\selectSeats.aspx.cs">
+      <DependentUpon>selectSeats.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\selectSeats.aspx.designer.cs">
+      <DependentUpon>selectSeats.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaTicketing\SQLConnection.cs" />
+    <Compile Include="CinemaTicketing\userRegister.aspx.cs">
+      <DependentUpon>userRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CinemaTicketing\userRegister.aspx.designer.cs">
+      <DependentUpon>userRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Loginaccount\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loginaccount\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CinemaTicketing\CinemaTicketingSystem.csproj" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5954</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44368/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
